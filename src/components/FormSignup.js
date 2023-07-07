@@ -40,10 +40,20 @@ const FormSignup = () => {
                     <input type="text" name="manager" id="manager" class="form-control input-sm" placeholder="Current Manager" />
                 </div>
 
-                <div class="form-group mb-3">
-                    <input type="text" name="region" id="email" class="form-control input-sm" placeholder="Email Address" />
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input type="text" name="region" id="email" class="form-control input-sm" placeholder="Email Address" />
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <select class="form-select">
+                            <option selected>Role</option>
+                            <option value="Manager">Manager</option>
+                            <option value="Agent">Agent</option>
+                        </select>
+                    </div>
                 </div>
-
 
                 <div class="row mb-3">
                     <div class="col-xs-6 col-sm-6 col-md-6">
@@ -59,7 +69,7 @@ const FormSignup = () => {
                 </div>
 
                 <Link to="/" type="submit" class="btn btn-success col-12">SUBMIT</Link>
-                
+
 
             </form>
 
